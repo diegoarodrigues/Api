@@ -2,18 +2,17 @@ node {
     stage("VerificaSeTemBuild"){
       echo VerificaDir("C:\\PublishApi");
     }
+	stage("Backup") {
+        echo "Backup"
+    }
     stage("build") {
-        //if(VerificaSeTemBuild){
         echo "build"
-        //}
     }
     stage("teste"){
         echo "teste"
-        
     }
     //bat "powershell -noprofile -command \"$ErrorActionPreference = 'Stop'; Set-PsDebug -Strict; C:\\Works\\PowerShell_testeJenkins\\Teste1.ps1\""
     //bat "powershell C:\\Works\\PowerShell_testeJenkins\\Teste1.ps1"
-
 }
 
 @NonCPS
