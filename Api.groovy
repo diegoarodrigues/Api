@@ -4,6 +4,9 @@ node {
     }
 	stage("Backup") {
         echo "Backup"
+		bat 'powershell "C:\\Users\\PublisherTS\\Desktop\\Shells\\teste.ps1" -Verbose'
+		//bat 'powershell "C:\\Works\\PowerShell_testeJenkins\\Teste1.ps1" -Verbose'
+		//PowerShell(". 'C:\\Works\\PowerShell_testeJenkins\\Teste1.ps1'")
     }
     stage("build") {
         echo "build"
